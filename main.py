@@ -1,4 +1,7 @@
-def alphaNumeration(n):
+from math import log
+from string import ascii_uppercase # pre-initialized string 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+def bijective_base26(n):
 	label = ""
 
 	digitnum = int(log(n,26)) + 1
@@ -8,4 +11,4 @@ def alphaNumeration(n):
 
 	return label
 
-#testing 123
+print(bijective_base26(27))
